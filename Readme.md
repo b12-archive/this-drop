@@ -17,35 +17,27 @@
 
 
 
-<div                                                         id="/">&nbsp;</div>
+<a                                                             id="/"></a>&nbsp;
 
-this-drop
-=========
+::drop()
+========
 
-**Drop a property from the `this` object**
+**Drop a property from the `this` object.**
 
+<a                                                      id="/example"></a>&nbsp;
 
+```js
+const drop = require('this-drop');
+const abc = {a: 1, b: 2, c: 3};
 
-
-<p align="center"><a
-  title="Graphic by the great Justin Mezzell"
-  href="http://justinmezzell.tumblr.com/post/89957156723"
-  >
-  <br/>
-  <br/>
-  <img
-    src="Readme/….gif"
-    width="400"
-    height="300"
-  />
-  <br/>
-  <br/>
-</a></p>
+abc::drop(['a', 'c']);
+//» {b: 2}
+```
 
 
 
 
-<div                                             id="/installation">&nbsp;</div>
+<a                                                 id="/installation"></a>&nbsp;
 
 Installation
 ------------
@@ -57,17 +49,41 @@ $ npm install this-drop
 
 
 
-<div                                                    id="/usage">&nbsp;</div>
+<a                                                        id="/usage"></a>&nbsp;
 
 Usage
 -----
 
-*Work in progress…*
+<pre>
+object::drop(keys)
+  ⇒ newObject
+</pre>
+
+See the [example above](#/example).
+
+`keys` should be iterable – you’ll probably want to use an array here.
+
+We don’t mutate the `object`. We make a shallow copy instead:
+
+```js
+const xyz = {x: 1, y: '2', z: [3]};
+const xz = xyz::drop(['y']);
+
+xyz.z === xz.z;
+//» true
+```
+
+Note that the example uses the ES 2016 [function bind syntax](https://github.com/zenparsing/es-function-bind). You can still use the library in any JS engine down to ES5 though:
+
+```js
+drop.call(abc, ['a', 'c']);
+//» {b: 2}
+```
 
 
 
 
-<div                                                  id="/license">&nbsp;</div>
+<a                                                      id="/license"></a>&nbsp;
 
 License
 -------
