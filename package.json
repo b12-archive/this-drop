@@ -1,6 +1,6 @@
 {
   "name": "this-drop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Return the `this` object stripped of some properties.",
   "dependencies": {
     "array-from": "^2.0.2",
