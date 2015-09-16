@@ -22,7 +22,7 @@
 this-drop
 =========
 
-**Drop a key from the `this` object**
+**Drop a property from the `this` object**
 
 
 
