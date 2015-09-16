@@ -1,6 +1,7 @@
 import drop from './module';
 
 const test = require('tape-catch');
+const Set = require('es6-set');
 
 test('Strips properties', (is) => {
   is.deepEqual(
@@ -42,6 +43,16 @@ test('Makes a shallow copy of `obj`', (is) => {
     xyz.z,
     xz.z,
     'keeps references'
+  );
+
+  is.end();
+});
+
+test('Works with non-arrays', (is) => {
+  is.deepEqual(
+    {a: 1, b: 2, c: 3}::drop(new Set(['a', 'c'])),
+    {b: 2},
+    'with a Set'
   );
 
   is.end();
