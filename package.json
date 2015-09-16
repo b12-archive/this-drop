@@ -37,7 +37,23 @@
     "/License.md"
   ],
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "object",
+    "drop",
+    "omit",
+    "except",
+    "exclude",
+    "remove",
+    "delete",
+    "immutable",
+    "key",
+    "keys",
+    "property",
+    "properties",
+    "this",
+    "trine",
+    "bind"
+  ],
   "author": "© 2015 Studio B12 GmbH  (http://studio-b12.de)",
   "contributors": [
     "Tomek Wiszniewski <t.wiszniewski@gmail.com>"
