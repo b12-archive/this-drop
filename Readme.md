@@ -1,12 +1,12 @@
 [![Coveralls – test coverage
-](https://img.shields.io/coveralls/studio-b12/<!--name-->.svg?style=flat-square)
-](https://coveralls.io/r/studio-b12/<!--name-->)
+](https://img.shields.io/coveralls/studio-b12/this-drop.svg?style=flat-square)
+](https://coveralls.io/r/studio-b12/this-drop)
  [![Travis – build status
-](https://img.shields.io/travis/studio-b12/<!--name-->/master.svg?style=flat-square)
-](https://travis-ci.org/studio-b12/<!--name-->)
+](https://img.shields.io/travis/studio-b12/this-drop/master.svg?style=flat-square)
+](https://travis-ci.org/studio-b12/this-drop)
  [![David – status of dependencies
-](https://img.shields.io/david/studio-b12/<!--name-->.svg?style=flat-square)
-](https://david-dm.org/studio-b12/<!--name-->)
+](https://img.shields.io/david/studio-b12/this-drop.svg?style=flat-square)
+](https://david-dm.org/studio-b12/this-drop)
  [![Stability: experimental
 ](https://img.shields.io/badge/stability-experimental-yellow.svg?style=flat-square)
 ](https://nodejs.org/api/documentation.html#documentation_stability_index)
@@ -19,10 +19,10 @@
 
 <div                                                         id="/">&nbsp;</div>
 
-<!--title-->
-<!--title-underline-->
+this-drop
+=========
 
-**<!--description-->**
+**Drop a key from the `this` object**
 
 
 
@@ -51,7 +51,7 @@ Installation
 ------------
 
 ```sh
-$ npm install <!--name-->
+$ npm install this-drop
 ```
 
 
