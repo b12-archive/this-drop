@@ -22,7 +22,7 @@
 ::drop()
 ========
 
-**Drop a property from the `this` object.**
+**Return the `this` object stripped of some properties.**
 
 <a                                                      id="/example"></a>&nbsp;
 
